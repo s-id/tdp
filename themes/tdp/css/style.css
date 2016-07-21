@@ -1,3 +1,47 @@
-/**
- * Place your custom styles here.
- */
+@font-face {
+    font-family: LeagueGothic;
+    src: url(fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+    margin-top: 19px;
+    padding: 0 0 0 5px;
+}
+
+.menu__item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.menu__link {
+    display: block;
+    font-family: LeagueGothic;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+    border-bottom: 2px solid transparent;
+    box-sizing: content-box;
+    padding: 0 4px;
+    transition: linear 0.1s;
+}
+
+.menu__link:hover {
+    border-bottom: 2px solid #edbfff;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
