@@ -5,7 +5,7 @@ global-styling:
 fonts:
   license:
     name: SIL Open Font License 1.1
-    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web
+    url: //scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web
   css:
     theme:
-      https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:400,600&subset=latin,cyrillic: { type: external }
+      //fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:400,600&subset=latin,cyrillic: { type: external }
