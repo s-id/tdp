@@ -1,47 +1,75 @@
-@font-face {
-    font-family: LeagueGothic;
-    src: url(fonts/LeagueGothic-Regular.otf);
-}
-
-@font-face {
-    font-family: Open Sans;
-    src: url(fonts/OpenSans-Regular.ttf);
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
-.menu {
-    margin-top: 19px;
-    padding: 0 0 0 5px;
+.background-transparent  {
+    background: url("img/background.jpg") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
 }
 
-.menu__item {
+.wrapper {
+    background: url("img/background.jpg") no-repeat 0 36px;
+    background-position: top;
+    background-size: cover;
+    min-width:770px;
+    max-width: 1215px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px 0;
+    z-index: 2;
+    box-shadow: 0 0 10px 5px #999;
+}
+
+#block-tdp-main-menu .menu, #block-mainnavigation .menu {
+    padding-top: 20px;
+    float: right;
+}
+
+#block-mainnavigation .menu {
+    float: left;
+}
+
+#block-tdp-main-menu .menu__item #block-mainnavigation .menu__item  {
     list-style: none;
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 20px;
 }
 
-.menu__link {
+#block-tdp-main-menu .menu__link, #block-mainnavigation .menu__link {
     display: block;
-    font-family: LeagueGothic;
-    font-size: 24px;
+    font-family: 'PT Sans Narrow', sans-serif;;
+    font-size: 20px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 1px 2px 2px rgba(0,0,0,.4);
     border-bottom: 2px solid transparent;
     box-sizing: content-box;
-    padding: 0 4px;
     transition: linear 0.1s;
 }
 
-.menu__link:hover {
-    border-bottom: 2px solid #edbfff;
+#block-tdp-main-menu .menu__link:hover, #block-mainnavigation .menu__link:hover {
+    border-bottom: 2px solid #3366cc;
+    background: none;
     color: white;
     text-decoration: none;
 }
 
-.menu__item:last-child {
-    margin-right: 0;
+.main-container {
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 0 0 5px 3px #fff;
+}
+
+footer {
+    background-color: rgba(255,255,255,.6);
+    box-shadow: 0 0 5px 3px #fff;
 }
