@@ -22,6 +22,9 @@ sites/*/services*.yml
 sites/*/files
 sites/*/private
 
+# Exlude images
+!sites/*/files/images
+
 # Ignore SimpleTest multi-site environment.
 sites/simpletest
 
