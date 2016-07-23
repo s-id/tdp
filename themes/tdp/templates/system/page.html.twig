@@ -66,8 +66,7 @@
     theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
     ] %}
 <div class="background-transparent"></div>
-<div class="wrapper">
-    <div class="container">
+<div class="wrapper container">
         <header id="header" class="row" role="banner">
 
             {# Branding #}
@@ -100,6 +99,16 @@
                 </div>
             {% endif %}
         </header>
+
+    {# Banner #}
+    {% if page.banner %}
+        {% block banner %}
+            <div class="row" role="heading">
+                {{ page.banner }}
+            </div>
+        {% endblock %}
+    {% endif %}
+
 
         {% endblock %}
         {% endif %}
@@ -188,4 +197,3 @@
             {% endblock %}
         {% endif %}
     </div>
-</div>
