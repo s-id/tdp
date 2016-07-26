@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function tdp_node_view() {
+// only a rough code outline to get the idea,
+// check the fields yourself with dpm()
+    if ($node->type == 'product' && $view_mode == 'teaser' && isset($node->field_product_image)) {
+        $first_image = $node->field_product_image[LANGUAGE_NONE][0]['value'][0];
+        $node->content['teaser_image'] = array(
+            '#markup' => render($first_image),
+            '#weight' => '-1', // to be rendered first
+        );
+    }
+}
