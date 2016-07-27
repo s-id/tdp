@@ -260,3 +260,63 @@ h1 {
         font-size: 20px;
     }
 }
+
+.menu--secondary {
+    list-style: none;
+}
+
+.menu--secondary .dropdown-menu {
+    border: 0;
+    box-shadow: none;
+}
+
+.menu--secondary .menu__item {
+
+}
+
+.menu--secondary .menu__item>a {
+    outline: 0;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    background: wheat;
+    padding: 5px;
+    color: black;
+}
+
+.menu--secondary .menu__item.active>a {
+    color: #fff;
+    background-color: #337ab7;
+    padding: 5px;
+}
+
+.dropdown-menu {
+    display: block;
+    position: relative;
+    float: none;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    margin-left: 20px;
+    padding: 5px;
+    clear: both;
+    white-space: normal;
+}
+
+.dropdown-menu > li > a:hover {
+    background: wheat;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus .dropdown-menu > li > a:focus, .menu--secondary .menu__item>a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.region-sidebar-first h2 {
+    font-size: 20px;
+    border-bottom: 2px solid lightblue;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
