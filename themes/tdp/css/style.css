@@ -320,3 +320,10 @@ h1 {
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
+
+.view-main .views-row{
+        display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 0 10px 10px;
+}
