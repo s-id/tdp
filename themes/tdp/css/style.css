@@ -99,6 +99,8 @@ footer.footer {
 
 .logo {
     float: none!important;
+    margin-top: 10px;
+    display: block;
 }
 
 .logo img {
@@ -321,9 +323,35 @@ h1 {
     margin-bottom: 20px;
 }
 
+.view-main h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.view-main .view-content {
+    font-size: 0;
+}
+
 .view-main .views-row{
         display: inline-block;
-    width: 30%;
     vertical-align: top;
-    padding: 0 10px 10px;
+    padding: 0 20px 20px;
+    font-size: 14px;
+}
+
+@media all and (min-width: 768px) {
+
+    .view-main .views-row{
+        width: 33.333%;
+    }
+}
+
+.block-views-blockpartners-block-1 .view-content {
+    text-align: center;
+}
+
+.block-views-blockpartners-block-1 .views-row {
+    display: inline-block;
+    padding: 10px 50px;
 }
