@@ -2,6 +2,9 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+  js:
+    js/script.js: {}
+
 fonts:
   license:
     name: SIL Open Font License 1.1
